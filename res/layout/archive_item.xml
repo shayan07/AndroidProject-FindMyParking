@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@color/card_gray"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/inner_frame"
+            style="@style/card_inner"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp" >
+                     <TextView
+							            android:id="@+id/txtAlertText"
+							            android:layout_width="144dp"
+							            android:layout_height="wrap_content"
+							            android:layout_marginLeft="45dp"
+							            android:layout_alignParentLeft="true"
+							     		android:textSize="17dp"
+							     		android:textStyle="bold"
+                                        android:textColor="#000000" />
+               <TextView
+					android:id="@+id/textView4"
+					android:layout_width="wrap_content"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="50dp"
+					android:layout_marginLeft="5dp"
+					
+					android:textColor="#000000"
+					android:textSize="14dp"
+									    />
+                    <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/ic" />
+                                
+                                         <TextView
+                                             android:id="@+id/txtAlertDate"
+                                             android:layout_width="fill_parent"
+                                             android:layout_height="wrap_content"
+                                             
+                                             android:layout_marginTop="22dp"
+											 android:layout_marginLeft="45dp"
+                                             
+                                             android:text="stored by Findmyparking "
+							            	android:textColor="#999999"
+									     	android:textSize="13dp"
+									     	 />
+                                
+            <RelativeLayout
+                android:id="@+id/titleFrame"
+                style="@style/card_title_frame"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true" >
+
+  
+                <Button
+                    android:id="@+id/delButton"
+                    style="@drawable/button_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="false"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="30dp"
+                    android:background="@drawable/custombutton"
+                    android:text="Delete"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/dirButton"
+                    style="@drawable/button_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="false"
+                    android:layout_marginLeft="75dp"
+                    android:background="@drawable/custombutton"
+                    android:gravity="center"
+                    android:text="Navigate"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/share_button"
+                    style="@drawable/button_style"
+                    android:layout_width="47dp"
+                    android:layout_height="47dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerInParent="false"
+                    android:layout_marginLeft="5dp"
+                    android:background="@drawable/google2"
+                    android:gravity="center"
+
+
+                   />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

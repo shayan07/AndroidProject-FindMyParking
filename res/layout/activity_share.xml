@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:background="@color/card_gray"
+        android:orientation="vertical" >
+
+        <RelativeLayout
+            android:id="@+id/inner_frame"
+            style="@style/card_inner"
+            android:layout_height="250dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="5dp" >
+
+            <RelativeLayout
+                android:id="@+id/titleFrame"
+                style="@style/card_title_frame"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true" >
+
+                
+                <TextView
+							            android:id="@+id/textView1"
+							            android:layout_width="144dp"
+							            android:layout_height="wrap_content"
+							            android:layout_marginLeft="45dp"
+							            android:layout_alignParentLeft="true"
+							     		android:layout_alignParentTop="true"
+							            android:text="Google+ "
+							            android:textColor="#000000"
+									     android:textSize="17dp"
+									     android:textStyle="bold" />
+                                <TextView
+							            android:id="@+id/textView1"
+							            android:layout_width="144dp"
+							            android:layout_height="wrap_content"
+							            android:layout_marginTop="22dp"
+							            android:layout_marginLeft="45dp"
+							            android:layout_alignParentLeft="true"
+							     		android:layout_alignParentTop="true"
+							            android:text="shared by Findmyparking "
+							            android:textColor="#999999"
+									     android:textSize="12dp"
+									    />
+                <TextView
+                    android:id="@+id/txtAlertText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="50dp"
+                    android:textColor="#000000"
+                    android:textSize="17dp"
+                    android:textStyle="bold" />
+
+                
+                
+                <Button
+                    android:id="@+id/share_button1"
+                    style="@drawable/button_style"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerInParent="false"
+                    android:layout_marginLeft="20dp"
+                    android:background="@drawable/custombutton"
+                    android:gravity="center"
+                    android:text="Share on Google+"
+                    android:textColor="#ffffff"
+                    android:textSize="17sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/google" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

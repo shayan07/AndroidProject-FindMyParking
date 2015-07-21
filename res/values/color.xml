@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="transparent">#7000ff00</color>
+     <color name="yellow1">#ffffcc</color>
+  <color name="blue1">#00FFFF</color>
+    <color name="blue2">#99CCFF</color>
+    <color name="blue3">#6666FF</color>
+    <color name="blue4">#33CCFF</color>  
+    <color name="blue5">#CCFFFF</color>
+    <color name="blue6">#00CCFF</color>
+    <color name="blue7">#0099FF</color>
+    <color name="purple_dark">#660066</color> 
+    
+    <color name="card_pressed">#ebebeb</color>
+    <color name="card_pressed_header">#d6d6d6</color>
+    <color name="header_button_default">#494949</color>
+    <color name="card_gray">#e5e5e5</color>
+
+     
+</resources>

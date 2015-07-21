@@ -1,0 +1,370 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/scroll2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:fillViewport="true"
+    android:stackFromBottom="true"
+    android:transcriptMode="alwaysScroll" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/card_gray"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/card_gray"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="0.25"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/inner_frame"
+                    style="@style/card_inner"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="#3b5998" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="104dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Location:"
+                        android:textColor="#ffffff"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/inner_frame"
+                    style="@style/card_inner"
+                    android:layout_height="4dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="#999999" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/inner_frame"
+                    style="@style/card_inner"
+                    android:layout_height="300dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true" >
+
+                    <RelativeLayout
+                        android:id="@+id/titleFrame"
+                        style="@style/card_title_frame"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true" >
+
+                        <RelativeLayout
+                            android:id="@+id/map_layout2"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="2dp" >
+
+                            <fragment
+                                android:id="@+id/map2"
+                                android:name="com.google.android.gms.maps.SupportMapFragment"
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:layout_centerHorizontal="true" />
+
+                            <ImageView
+                                android:id="@+id/transparent_image2"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerHorizontal="true"
+                                android:adjustViewBounds="true"
+                                android:maxWidth="@dimen/activity_horizontal_margin"
+                                android:src="#00000000" />
+                        </RelativeLayout>
+
+                        <Button
+                            android:id="@+id/navi"
+                            style="@drawable/button_style"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerInParent="false"
+                            android:layout_gravity="center_vertical|center_horizontal"
+                            android:background="@drawable/custombutton"
+                            android:gravity="center"
+                            android:onClick="onClickNavi"
+                            android:text="Navigation on Google"
+                            android:textColor="#ffffff"
+                            android:textSize="17sp"
+                            android:textStyle="bold" >
+                        </Button>
+
+                        <CheckBox
+                            android:id="@+id/checkbox_save"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/map_layout2"
+                            android:layout_centerHorizontal="true"
+                            android:text="@string/checkbox"
+                            android:textColor="#999999"
+                            android:textSize="17dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.25"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/inner_frame"
+                    style="@style/card_inner"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="#3b5998" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Count Down Timer:"
+                        android:textColor="#ffffff"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/inner_frame"
+                    style="@style/card_inner"
+                    android:layout_height="4dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="#999999" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/inner_frame"
+                    style="@style/card_inner"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="2dp" >
+
+                    <RelativeLayout
+                        android:id="@+id/titleFrame"
+                        style="@style/card_title_frame" >
+
+                        <TextView
+                            android:id="@+id/chronometer1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:text="0:0"
+                            android:textColor="#999999"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+
+                        -->
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.25"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/inner_frame"
+                    style="@style/card_inner"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="#3b5998" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Photo:"
+                        android:textColor="#ffffff"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/inner_frame"
+                    style="@style/card_inner"
+                    android:layout_height="4dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="#999999" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/inner_frame"
+                    style="@style/card_inner"
+                    android:layout_height="120dp"
+                    android:layout_marginTop="2dp" >
+
+                    <RelativeLayout
+                        android:id="@+id/titleFrame"
+                        style="@style/card_title_frame" >
+
+                        <GridLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:columnCount="1" >
+
+                            <ImageView
+                                android:id="@+id/imageView2"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal|center"
+                                android:layout_marginTop="20dp"
+                                android:layout_row="0"
+                                android:rotation="90"
+                                android:src="@drawable/camera2" />
+
+                            <ImageView
+                                android:id="@+id/imageView1"
+                                android:layout_column="0"
+                                android:layout_gravity="center_vertical|center_horizontal|center"
+                                android:layout_marginTop="20dp"
+                                android:layout_row="0"
+                                android:rotation="90" />
+                        </GridLayout>
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="0.25"
+                android:orientation="vertical" >
+
+                <RelativeLayout
+                    android:id="@+id/inner_frame"
+                    style="@style/card_inner"
+                    android:layout_height="35dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="#3b5998" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="144dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentTop="true"
+                        android:text="Note:"
+                        android:textColor="#ffffff"
+                        android:textSize="17dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/inner_frame"
+                    style="@style/card_inner"
+                    android:layout_height="4dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentLeft="true"
+                    android:background="#999999" >
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/inner_frame"
+                    style="@style/card_inner"
+                    android:layout_height="70dp"
+                    android:layout_marginTop="2dp" >
+
+                    <RelativeLayout
+                        android:id="@+id/titleFrame"
+                        style="@style/card_title_frame" >
+
+                        <TextView
+                            android:id="@+id/textViewUserInput"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=""
+                            android:textSize="20sp" />
+                    </RelativeLayout>
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_centerInParent="false"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_margin="10dp"
+            android:background="@drawable/custombutton"
+            android:onClick="onClickFinish"
+            android:text="finish and delete record"
+            android:textColor="#ffffff"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</ScrollView>
